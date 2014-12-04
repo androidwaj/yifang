@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical" >
+    <EditText 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:id="@+id/sendweibo_content"
+        android:lines="4"
+        android:hint="请输入微博内容（140个汉字以内）"
+        />
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        >
+        <Button 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="发送"
+	    android:onClick="sendClick"
+	    android:layout_marginTop="10dp"
+	    android:padding="15dp"
+	    android:background="@drawable/login_bt_bg"
+	    />
+    </RelativeLayout>
+</LinearLayout>

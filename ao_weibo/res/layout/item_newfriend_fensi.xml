@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    android:gravity="center_vertical"
+    android:padding="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:src="@drawable/newfriend"
+         />
+    <LinearLayout 
+        android:padding="5dp"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#f00"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="查看所有粉丝"
+            />
+            <TextView 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#808080"
+                android:textSize="13sp"
+                android:text="暂时没有新粉丝"
+                />
+          
+    </LinearLayout>
+      <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/common_icon_arrow"
+                />
+    </LinearLayout>

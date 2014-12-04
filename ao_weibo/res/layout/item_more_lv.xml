@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:padding="8dp"
+    android:orientation="horizontal" >
+    <TextView 
+        android:id="@+id/item_more_lv_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="hehe"
+        android:textSize="20dp"
+        android:textColor="#6C6C6C"
+        android:layout_weight="1"
+        />
+    <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/common_icon_arrow"
+        />
+
+</LinearLayout>
