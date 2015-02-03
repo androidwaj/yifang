@@ -30,6 +30,7 @@ public class UserManageActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.act_usermanage);
+		SysApplication.getInstance().addActivity(this); 
 		iv = (ImageView) findViewById(R.id.usermanage_iv);
 		tv = (TextView) findViewById(R.id.usermanage_tv);
 		db = DbUtils.create(context);
@@ -63,7 +64,7 @@ public class UserManageActivity extends Activity {
 			@Override
 			public void onClick(DialogInterface dialog, int which) {
 				finish();
-				HomeTabActivity.activity.finish();
+				SysApplication.getInstance().exit();
 			}
 		});
 		builder.show();

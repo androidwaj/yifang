@@ -21,6 +21,7 @@ public class HotnewsActivity extends Activity implements IXListViewListener {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.act_hotnews);
+		SysApplication.getInstance().addActivity(this); 
 		hotnews_xlv = (XListView) findViewById(R.id.hotnews_xlv);
 		initData();
 	}

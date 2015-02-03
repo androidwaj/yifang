@@ -31,6 +31,7 @@ public class MyPhotoActivity extends Activity implements OnItemClickListener {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.act_myphoto);
+		SysApplication.getInstance().addActivity(this); 
 		loader = ImageLoaderutils.getInstance(context);
 		options = ImageLoaderutils.getOpt();
 		initViews();

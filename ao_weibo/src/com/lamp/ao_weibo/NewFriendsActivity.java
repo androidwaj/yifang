@@ -20,6 +20,7 @@ public class NewFriendsActivity extends Activity implements IXListViewListener {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.act_newfriends);
+		SysApplication.getInstance().addActivity(this); 
 		xlv = (XListView) findViewById(R.id.newfriends_xlv);
 		xlv.setPullLoadEnable(false);
 		new Thread(){

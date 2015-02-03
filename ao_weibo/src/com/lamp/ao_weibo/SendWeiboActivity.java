@@ -32,6 +32,7 @@ public class SendWeiboActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.act_sendweibo);
+		SysApplication.getInstance().addActivity(this); 
 		sendweibo_content = (EditText) findViewById(R.id.sendweibo_content);
 		db = DbUtils.create(context);
 	}

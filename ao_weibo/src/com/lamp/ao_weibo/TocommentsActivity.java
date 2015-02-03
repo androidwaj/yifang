@@ -21,6 +21,7 @@ public class TocommentsActivity extends Activity implements IXListViewListener{
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		SysApplication.getInstance().addActivity(this); 
 		setContentView(R.layout.act_tocomments);
 		tocomments_xlv = (XListView) findViewById(R.id.tocomments_xlv);
 		initData();

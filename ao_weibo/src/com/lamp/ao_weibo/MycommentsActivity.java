@@ -21,6 +21,7 @@ public class MycommentsActivity extends Activity implements IXListViewListener{
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.act_mycomments);
+		SysApplication.getInstance().addActivity(this); 
 		mycomments_xlv = (XListView) findViewById(R.id.mycomments_xlv);
 		initData();
 	}

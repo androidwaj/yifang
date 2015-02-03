@@ -29,6 +29,7 @@ public class PingLunActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.act_pinglunweibo);
+		SysApplication.getInstance().addActivity(this); 
 		pinglunweibo_content = (EditText) findViewById(R.id.pinglunweibo_content);
 		id = getIntent().getLongExtra("id", 0);
 		access_token = getIntent().getStringExtra("access_token");

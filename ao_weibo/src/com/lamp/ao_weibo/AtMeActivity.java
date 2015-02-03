@@ -24,6 +24,7 @@ public class AtMeActivity extends Activity implements IXListViewListener {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.act_atme);
+		SysApplication.getInstance().addActivity(this); 
 		atme_title = (TextView) findViewById(R.id.atme_title);
 		atme_xlv = (XListView) findViewById(R.id.atme_xlv);
 		initData();

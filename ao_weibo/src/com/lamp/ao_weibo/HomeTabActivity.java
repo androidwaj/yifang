@@ -20,16 +20,15 @@ public class HomeTabActivity extends FragmentActivity implements OnPageChangeLis
 	private TextView[] textViews = new TextView[4];
 	private ImageView home_iv,message_iv,me_iv,more_iv;
 	private ImageView[] imageViews = new ImageView[4];
-	static FragmentActivity activity;
 	private ViewPager vp;
 	private HomeFragmentPagerAdapter adapter;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		SysApplication.getInstance().addActivity(this); 
 		setContentView(R.layout.act_hometab);
 		initView();
 		initData();
-		activity = HomeTabActivity.this;
 	}
 
 	private void initData() {

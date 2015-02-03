@@ -31,6 +31,7 @@ public class WeiboMainActivity extends Activity{
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.act_weibomain);
+		SysApplication.getInstance().addActivity(this); 
 		Intent intent = this.getIntent();
 		weiboinfo=(Weiboinfo) intent.getExtras().get("Weiboinfo");
 		loader=ImageLoaderutils.getInstance(context);

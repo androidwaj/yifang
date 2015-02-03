@@ -26,6 +26,7 @@ public class SplashActivity extends Activity implements AnimationListener {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.act_splash);
+		SysApplication.getInstance().addActivity(this); 
 		icon = (ImageView) findViewById(R.id.splash_icon);
 		AnimationSet animationSet = (AnimationSet) AnimationUtils.loadAnimation(context, R.anim.splash_set);
 		icon.setAnimation(animationSet);

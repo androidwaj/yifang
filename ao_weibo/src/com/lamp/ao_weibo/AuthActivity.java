@@ -39,6 +39,7 @@ public class AuthActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.act_auth);
+		SysApplication.getInstance().addActivity(this); 
 		db = DbUtils.create(context);
 		ab = new Builder(context);
 		ab.setIcon(android.R.drawable.ic_dialog_alert);

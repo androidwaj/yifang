@@ -34,6 +34,7 @@ public class LoginActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.act_login);
+		SysApplication.getInstance().addActivity(this); 
 		DbUtils dbUtils = DbUtils.create(context);
 		try {
 			user = dbUtils.findFirst(User.class);

@@ -21,6 +21,7 @@ public class MyCollectActivity extends Activity implements IXListViewListener {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.act_mycollect);
+		SysApplication.getInstance().addActivity(this); 
 		initView();
 	}
 	
